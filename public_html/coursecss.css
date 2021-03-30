@@ -1,0 +1,252 @@
+/* 
+    Document   : coursecss
+    Created on : Jan 15, 2021, 11:57:53 PM
+    Author     : mm
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body { 
+   margin: 0 0;
+   font-family: 'Almarai', sans-serif;
+   direction: rtl;
+
+}
+.clearfix{
+    clear: both;
+}
+.container{
+   width: 85%;
+  margin: auto;
+}
+/*section1//////////////////*/
+section .title h1 {
+    position: relative;
+    font-size: 60px;
+    color: white;
+    
+}
+
+section .title {
+    padding: 60px;
+    margin-bottom: 45px;
+    position: relative;
+    
+}
+section .title:before {
+    content: "";
+    background-image: url(image/c1.jpg);
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    filter: brightness(0.5);
+    
+}
+section h2 {
+    position: relative;
+    padding-bottom: 10PX;
+    margin-bottom: 40px;
+}
+
+section h2:before {
+    content: "";
+    border-bottom: 1px solid rgb(118,216,220);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+   width: 140px;
+    
+}
+section p {
+    width: 60%;
+    line-height: 2em;
+    margin-bottom: 35px;
+}
+section .point {
+    position: relative;
+    width: 60%;
+   padding: 10px 40px 10px 0px;
+    margin-bottom: -4px;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
+
+}
+section .point:before {
+    content: "";
+    background-image: url(image/iconmark.jpg);
+    filter: opacity(0.5);
+    background-size: cover;
+    position: absolute;
+    width: 77px;
+    top: 0px;
+    bottom: 0px;
+    right: -10px;
+}
+section .goals {
+    width: 58%;
+    padding: 30px 30px 10px;
+    box-shadow: 0px 2px 2px -3px rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    
+    
+}
+
+section .goals img {
+   top: -23px;
+    width: 46px;
+    right: -22px;
+    bottom: 0px;
+    position: absolute;
+}
+section li {
+   font-size: 22px;
+   padding-bottom: 10px;
+}
+/*//////////////section1 end///////////////////////////////*/
+.new_date  {
+    text-align: center;
+}
+.new_date h1 {
+        margin-bottom: 85px;
+    padding-top: 60px;
+  font-size: 40px;
+    position: relative;
+}
+.new_date h1:before {
+    position: absolute;
+    border: 4px solid rgb(255,218,65);
+    top: 123px;
+    left: 47%;
+    right: 48%;
+    border-radius: 20px;
+    content: "";
+    
+}
+
+.new_date .timer {
+    background-color: white;
+    width: 39%;
+    margin: auto;
+    padding: 8px 15px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
+}
+.new_date .timer #timer {
+    position: relative;
+    
+font-size: 40px;
+    font-weight: 700;
+    color: #c7c1c1;
+}
+.new_date .timer p {
+    position: relative;
+    font-size: 22px;
+    
+    color: #847b7b;
+    line-height: .4em;
+   
+}
+.new_date .timer .pmar {
+    
+   margin-bottom: 20px;
+   
+}
+.new_date .timer .circle {
+       position: relative;
+    width: 60px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50% 50%;
+    float: right;
+    margin-right: 49px;
+}
+
+.new_date button {
+    /* padding-bottom: 5%; */
+    position: relative;
+    color: white;
+    background-color: rgb(255,218,65);
+    color: black;
+    cursor: pointer;
+    padding: 10px 35px;
+    border-radius: 17px;
+    outline: none;
+    border: none;
+    font-size: 23px;
+    font-weight: 600;
+    margin: 60px 0px;
+}
+.new_date button:hover {
+    opacity: .9;
+   
+}
+
+/*/////////////new date end/////////////////////////////////*/
+/*//////////acordion start..../////////////////////////*/
+article {
+    padding:0px 0px 20px;
+   background-color: rgb(255,218,65);
+   
+}
+article h1 {
+    position: relative;
+   padding-top: 42px;
+    text-align: right;
+    margin-right: 108px;
+    font-size: 35px;
+}
+article h1:before {
+    position: absolute;
+    border: 1px solid white;
+    top: 87px;
+    left: 87%;
+    right: 50px;
+    border-radius: 20px;
+    content: "";
+    
+}
+.accordion {
+  background-color: white;
+    cursor: pointer;
+    padding: 18px;
+    margin-top: 20px;
+    width: 85%;
+    margin-right: 100px;
+    border: none;
+    text-align: right;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: left;
+  margin-right: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.active, .accordion:hover {
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.panel {
+ width: 82%;
+    margin-right: 100px;
+    padding: 0 18px;
+    display: none;
+    transition: .4s;
+    background-color: white;
+    overflow: hidden;
+    transition: 0.6s;
+}
