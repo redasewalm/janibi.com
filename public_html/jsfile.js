@@ -25,7 +25,7 @@ var get_course = document.querySelector('input');
 
 /////////////////////end of course////////////////////////////////////
 
-var countDownDate = new Date("Jan 22, 2021 15:37:25").getTime();
+var countDownDate = new Date("Jan 22, 2022 15:37:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -71,7 +71,7 @@ var x = setInterval(function() {
 }, 1000);
 
 
-var countDownDate2 = new Date("mars 3, 2021 15:37:25").getTime();
+var countDownDate2 = new Date("mars 3, 2022 15:37:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
